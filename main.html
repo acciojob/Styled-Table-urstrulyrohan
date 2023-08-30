@@ -2,14 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Game Statistics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: hsl(211, 65%, 55%);
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
-
-        
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>KILLS</th>
+                <th>SAVES</th>
+                <th>DEATHS</th>
+                <th>REVIVES</th>
+                <th>WIN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hackerman</td>
+                <td>10</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Cool Doggo</td>
+                <td>13</td>
+                <td>4</td>
+                <td>8</td>
+                <td>7</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Andrews</td>
+                <td>19</td>
+                <td>2</td>
+                <td>10</td>
+                <td>11</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Strawberry</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
